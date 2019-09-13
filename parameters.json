@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "northeurope"
+        },
+        "cloudGuardVersion": {
+            "value": "R80.30 - Bring Your Own License"
+        },
+        "adminPassword": {
+            "value": "Musgraves!23"
+        },
+        "authenticationType": {
+            "value": "password"
+        },
+        "vmName": {
+            "value": "azchkptmgt01"
+        },
+        "vmSize": {
+            "value": "Standard_D3_v2"
+        },
+        "virtualNetworkName": {
+            "value": "hub-prd-vnet01"
+        },
+        "Subnet1Name": {
+            "value": "hub-prd-vnet-dmzSECmgmt-snet"
+        },
+        "Subnet1Prefix": {
+            "value": "10.220.4.32/27"
+        },
+        "Subnet1StartAddress": {
+            "value": "10.220.4.36"
+        },
+        "vnetNewOrExisting": {
+            "value": "existing"
+        },
+        "virtualNetworkExistingRGName": {
+            "value": "hub-network-prd-rg01"
+        },
+        "managementGUIClientNetwork": {
+            "value": "0.0.0.0/0"
+        },
+        "installationType": {
+            "value": "management"
+        },
+        "allowDownloadFromUploadToCheckPoint": {
+            "value": "true"
+        },
+        "additionalDiskSizeGB": {
+            "value": 0
+        },
+        "diskType": {
+            "value": "Standard_LRS"
+        },
+        "sourceImageVhdUri": {
+            "value": "noCustomUri"
+        }
+    }
+}
